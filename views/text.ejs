@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/text.css'/>
+</head>
+<body>
+<header>
+    <div class="nav_left">
+        <div>
+            woolklkd
+        </div>
+        <ul id="nav">
+            <li>ssss</li>
+            <div class="fen"></div>
+            <li>ssss</li>
+            <div class="fen"></div>
+            <li>ssss</li>
+            <div class="fen"></div>
+            <li>ssss</li>
+        </ul>
+    </div>
+    <div class="nav_right">
+        <ul>
+            <li>ssss</li>
+            <li>ssss</li>
+            <li>ssss</li>
+            <li>ssss</li>
+        </ul>
+    </div>
+    <div id="na" class="nav_article" style="display: none">
+        <div style="display: none" class="na_r">
+            11111
+        </div>
+        <div></div>
+        <div style="display: none" class="na_r">
+            2222
+        </div>
+        <div></div>
+        <div style="display: none" class="na_r">
+            3333
+        </div>
+        <div></div>
+        <div style="display: none" class="na_r">
+            44444
+        </div>
+    </div>
+</header>
+<footer>
+    <script type="text/javascript" src="/javascripts/jquery-2.2.1.min.js"></script>
+    <!--<script type="text/javascript" src="/js/classie.js"></script>-->
+    <script>
+        window.onload = function () {
+            var lst = $('#nav li');
+            var la = $('#na div');
+            var na = $('#na');
+            lst.mouseover(function () {
+                var index = $(this).index()
+                na.css('display', 'block')
+                na.fadeIn();
+                $(this).addClass('csls');
+                $(this).siblings().removeClass('csls');
+                la.css('display', 'none')
+                la.eq(index).css('display', 'block')
+            })
+            $('header').mouseleave(function () {
+                na.css('display', 'none')
+                la.fadeOut();
+                lst.removeClass('csls')
+                la.css('display', 'none')
+            })
+        }
+
+    </script>
+</footer>
+<% include footer.ejs %>
+</body>
+</html>

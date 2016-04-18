@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/login.css'/>
+    <link rel='stylesheet' href='/stylesheets/style.css'/>
+</head>
+<body>
+<header>
+    <div class="top_title">
+        <a href="/">
+            <img src="/img/logo.png">
+        </a>
+        <h3>有家·有爱·有欧派</h3>
+    </div>
+    <div>
+
+    </div>
+
+</header>
+<article>
+    <div class="nav_left"></div>
+    <div class="nav_right">
+        <div id="menu">
+            <!--tag标题-->
+            <ul id="nav">
+                <li class="selected"><a href="#">用户登录</a></li>
+                <li class="f"><a href="#">新用户注册</a></li>
+            </ul>
+            <!--二级菜单-->
+            <div id="menu_con">
+                <div class="tag" style="display: block">
+                    <form>
+                        <div>
+                            <input type="text" placeholder="手机号/邮箱地址">
+                        </div>
+                        <div>
+                            <input type="text" placeholder="密码">
+                        </div>
+
+                            <button>登录</button>
+
+                    </form>
+                </div>
+                <div class="tag" style="display: none">
+                    <form>
+                        <div>
+                            <input type="text" placeholder="手机号/邮箱地址">
+                        </div>
+                        <div>
+                            <input type="text" placeholder="密码">
+                        </div>
+                        <div>
+                            <input type="text" placeholder="重复密码">
+                        </div>
+
+                        <button>注册</button>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</article>
+<% include footer.ejs %>
+
+<script type="text/javascript" src="/javascripts/jquery-2.2.1.min.js"></script>
+<script type="text/javascript" src="/js/login.js"></script>
+</body>
+</html>
