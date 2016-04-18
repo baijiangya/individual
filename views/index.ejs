@@ -1,212 +1,106 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title><%= title %></title>
-    <link rel='stylesheet' href='/stylesheets/style.css'/>
-
-    <script>
-        $(function () {
-            $('.left_nav li').hover(function () {
-                $('.h_nav').fadeIn()
-                var index = $(this).index(".pullDownList li");
-            })
-        })
-
-    </script>
-</head>
-<body>
-<header class="S_condition">
-    <nav>Hi，欢迎来到欧派商城! <a href='/login'>请登录</a> <a href="">免费注册</a>
-        <ul style="float: right;margin-right: 5%">
-            <li>客服电话:400-884-1869</li>
-        </ul>
-    </nav>
-</header>
-<nav>
-    <article class="S_top">
-        <div class="logo">
-            <a href=""><img src="/img/logo.png"></a>
-        </div>
-        <div class="S_hunt">
-            <input type="text">
-            <button type="button">Go</button>
-        </div>
-    </article>
-</nav>
-<article class="yHeader nav_article">
-    <!-- 导航   start  -->
-    <div class="yNavIndex">
-        <div class="pullDown">
-            <div class="pullDownTitle">
-                全部分类
-            </div>
-            <ul class="pullDownList">
-                <div class="x"></div>
-                <li class="menulihover">
-                    <i class="listi1"></i>
-                    <a href="" target="_blank">
-                        厨房
-                    </a>
-                    <span></span>
-                </li>
-                <div class="x"></div>
-                <li class="menulihover">
-                    <i class="listi1"></i>
-                    <a href="" target="_blank">
-                        卧室
-                    </a>
-                    <span></span>
-                </li>
-                <div class="x"></div>
-                <li class="menulihover">
-                    <i class="listi1"></i>
-                    <a href="" target="_blank">
-                        客厅
-                    </a>
-                    <span></span>
-                </li>
-                <div class="x"></div>
-                <li class="menulihover">
-                    <i class="listi1"></i>
-                    <a href="" target="_blank">
-                        儿童房
-                    </a>
-                    <span></span>
-                </li>
-                <div class="x"></div>
-                <li class="menulihover">
-                    <i class="listi1"></i>
-                    <a href="" target="_blank">
-                        书房
-                    </a>
-                    <span></span>
-                </li>
-            </ul>
-            <!-- 下拉详细列表具体分类 -->
-            <div class="yMenuListCon">
-                <div class="yMenuListConin">
-                    <div class="yMenuLCinList">
-                        <h3>风格</h3>
-                        <p>
-                            <a href="" class="ecolor610">新实用主义</a>
-                            <a href="" class="ecolor610">新实用主义</a>
-                            <a href="" class="ecolor610">新实用主义</a>
-                            <a href="" class="ecolor610">新实用主义</a>
-                        </p>
-                    </div>
-                    <div class="x"></div>
-                    <div class="yMenuLCinList">
-                        <h3>布局</h3>
-                        <p>
-                            <a href="" class="ecolor610">新实用主义</a>
-                            <a href="" class="ecolor610">新实用主义</a>
-                            <a href="" class="ecolor610">新实用主义</a>
-                            <a href="" class="ecolor610">新实用主义</a>
-                        </p>
-                    </div>
-                    <div class="x"></div>
-                    <div class="yMenuLCinList">
-                        <h3>面积</h3>
-                        <p>
-                            <a href="" class="ecolor610">新实用主义</a>
-                            <a href="" class="ecolor610">新实用主义</a>
-                            <a href="" class="ecolor610">新实用主义</a>
-                            <a href="" class="ecolor610">新实用主义</a>
-                        </p>
-                    </div>
-                </div>
-                <div class="yMenuListConin">
-                    <div class="yMenuLCinList">
-                        <h3>风格</h3>
-                        <p>
-                            <a href="" class="ecolor610">新实用主义</a>
-                            <a href="" class="ecolor610">新实用主义</a>
-                            <a href="" class="ecolor610">新实用主义</a>
-                            <a href="" class="ecolor610">新实用主义</a>
-                        </p>
-                    </div>
-                    <div class="x"></div>
-                </div>
-                <div class="yMenuListConin">
-                    <div class="yMenuLCinList">
-                        <h3>风格</h3>
-                        <p>
-                            <a href="" class="ecolor610">新实用主义</a>
-                            <a href="" class="ecolor610">新实用主义</a>
-                            <a href="" class="ecolor610">新实用主义</a>
-                            <a href="" class="ecolor610">新实用主义</a>
-                        </p>
-                    </div>
-                    <div class="x"></div>
-                </div>
-                <div class="yMenuListConin">
-                    <div class="yMenuLCinList">
-                        <h3>风格</h3>
-                        <p>
-                            <a href="" class="ecolor610">新实用主义</a>
-                            <a href="" class="ecolor610">新实用主义</a>
-                            <a href="" class="ecolor610">新实用主义</a>
-                            <a href="" class="ecolor610">新实用主义</a>
-                        </p>
-                    </div>
-                    <div class="x"></div>
-                </div>
-            </div>
-        </div>
-        <ul class="yMenuIndex">
-            <li><a href="" target="_blank" class="yMenua">首页</a></li>
-            <li><a href="" target="_blank">电器城 <span></span></a></li>
-            <li><a href="" target="_blank">电器城 <span></span></a></li>
-            <li><a href="" target="_blank">电器城 <span></span></a></li>
-            <li><a href="" target="_blank">电器城 <span></span></a></li>
-            <li><a href="" target="_blank">电器城 <span></span></a></li>
-            <li><a href="" target="_blank">电器城 <span></span></a></li>
-        </ul>
-    </div>
-    <div class="yBanner">
-        <div class="yBannerList">
-            <div class="yBannerListIn">
-                <!--<a href="">-->
-                    <img class="" src="/img/1.jpg">
-					<!--<span class="ytextBanner" style="opacity:1;">-->
-					<!--</span>-->
-                <!--</a>-->
-                <!--<div class="yBannerListInRight">-->
-                    <!--<a href="">-->
-                        <!--<img src="images/BR2.png"/>-->
-                    <!--</a>-->
-                    <!--<b class="yimaginaryLine"></b>-->
-                    <!--<a href="">-->
-                        <!--<img src="images/BR2.png"/>-->
-                    <!--</a>-->
-                <!--</div>-->
-            </div>
-        </div>
-    </div>
-</article>
-
-
-<article class="agent">
+<% include unit/top.ejs %>
+<link rel='stylesheet' href='/stylesheets/style.css'/>
+<!--<link rel='stylesheet' href='/stylesheets/component.css'/>-->
+<!--<link rel='stylesheet' href='/stylesheets/default.css'/>-->
+<!--<link rel='stylesheet' href='/stylesheets/text.css'/>-->
+<% include unit/head.ejs %>
+<header class="home_top">
+    <span>Hi，欢迎来到欧派商城! <a href='/login'>请登录</a> <a href="">免费注册</a></span>
     <ul>
-        <li>
-            <a href=""><img src="/img/11.png"></a>
-        </li>
-        <li style="margin-left: 13px">
-            <a href=""><img src="/img/22.jpg"></a>
-        </li>
-        <li style="margin-left: 13px">
-            <a href=""><img src="/img/33.png"></a>
-        </li>
+        <li>客服电话:400-884-1869</li>
     </ul>
-    <div>
-        <img src="/img/index_flow.png">
+</header>
+<article class="home_title">
+    <div class="home_logo">
+        <a href="#"><img src="/img/logo.png"></a>
+    </div>
+    <div class="home_go">
+        <input type="text">
+        <button type="button">GO</button>
     </div>
 </article>
+<nav class="home_nav">
+    <div class="home_nav_left">
+        全部分类
+    </div>
+    <ul class="home_nav_right">
+        <li>首页</li>
+        <li>全屋搭配</li>
+        <li>晒家分享</li>
+        <li>实体门店</li>
+        <li>实体门店</li>
+        <li>实体门店</li>
+        <li>实体门店</li>
+    </ul>
+</nav>
+<article class="home_list_nav">
+    <span id="nas">
+        <div class="home_list_nav_left">
+            <ul id="nav">
+                <li>厨房</li>
+                <div class="fen"></div>
+                <li>客厅</li>
+                <div class="fen"></div>
+                <li>书房</li>
+                <div class="fen"></div>
+                <li>儿童室</li>
+                <div class="fen"></div>
+                <li>卧室</li>
+            </ul>
+        </div>
+        <div id="na" class="home_list_nav_right" style="display: none">
+            <div class="home_list_nav_right_text">
+                <div>
+                    <h2>风格</h2>
+                    <ul>
+                        <li>sdsdsd</li>
+                        <li>sdsdsd</li>
+                        <li>sdsdsd</li>
+                    </ul>
+                </div>
+                <div class="fen"></div>
+                <div>
+                    <h2>风格</h2>
+                    <ul>
+                        <li>sdsdsd</li>
+                        <li>sdsdsd</li>
+                        <li>sdsdsd</li>
+                    </ul>
+                </div>
+                <div class="fen"></div>
+                <div>
+                    <h2>风格</h2>
+                    <ul>
+                        <li>sdsdsd</li>
+                        <li>sdsdsd</li>
+                        <li>sdsdsd</li>
+                    </ul>
+                </div>
+            </div>
+            <div></div>
+            <div class="home_list_nav_right_text">
+                哇哇哇哇哇哇哇哇哇哇哇哇哇
+            </div>
+            <div></div>
+            <div class="home_list_nav_right_text">
+                谔谔谔谔谔谔谔谔谔谔谔谔谔谔
+            </div>
+            <div></div>
+            <div class="home_list_nav_right_text">
+                啊啊啊啊啊啊啊啊啊啊啊啊啊啊
+            </div>
+            <div></div>
+            <div class="home_list_nav_right_text">
+                钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱钱
+            </div>
+        </div>
+    </span>
+</article>
+<article>
+    <img src="/img/1.jpg">
+</article>
 
-<footer>
-    <script type="text/javascript" src="/javascripts/jquery-2.2.1.min.js"></script>
-    <script type="text/javascript" src="/js/classie.js"></script>
-</footer>
-<% include footer.ejs %>
-</body>
-</html>
+
+<% include unit/footer.ejs %>
+<% include unit/end.ejs %>
+
