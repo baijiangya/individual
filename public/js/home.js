@@ -1,3 +1,4 @@
+//首页导航js
 window.onload = function () {
     var lst = $('#nav li');
     var la = $('#na>div');

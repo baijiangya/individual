@@ -12,27 +12,17 @@ $(function () {
         men.eq(index).css('display', 'block')
     })
 });
-function onlogin(_name,_pwd) {
-    //var _name = form.name.value;
-    //var _pwd = form.pwd.value;
-    //if (!name) {
-    //    alert('用户名称不能为空');
-    //    return;
-    //}
-    //if (!pwd) {
-    //    alert('密码不能为空');
-    //    return;
-    //}
-    //$.ajax({
-    //    url: '/sign',
-    //    data: {name: _name, pwd: _pwd},
-    //    type: 'post',
-    //    dataType: 'json',
-    //    success: function (date) {
-    //
-    //    }
-    //});
-
+function onlogin(form) {
+    var _name = form.name.value;
+    var _pwd = form.pwd.value;
+    if (!name) {
+        alert('用户名称不能为空');
+        return;
+    }
+    if (!pwd) {
+        alert('密码不能为空');
+        return;
+    }
     $.ajax({
         url: '/sign',//你对数据库的操作路径
         data: {//这是参数
