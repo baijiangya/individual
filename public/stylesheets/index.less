@@ -1,23 +1,5 @@
-body, p, ul, ol, form, input, table, tr, td, dl, dt, dd, img, div {
-  padding: 0px;
-  margin: 0px;
-  font: 12px/20px "宋体", Arial;
-  list-style: none;
-
-}
-
-body {
-  overflow-x: hidden
-}
-
-h1, h2, h3, h4, h5, h6 {
-  padding: 0px;
-  margin: 0px;
-}
-
-//当分辨率大的时候出来
-
-@media (min-width: 1210px ) {
+// 小于1210px处理
+@media (max-width: 1210px) {
   .home_top {
     width: auto;
     min-width: 1366px;
@@ -26,8 +8,7 @@ h1, h2, h3, h4, h5, h6 {
   }
 
   .home_top div {
-    margin-right: 5%;
-    margin-left: 5%;
+
   }
 
   .home_top ul {
@@ -54,7 +35,7 @@ h1, h2, h3, h4, h5, h6 {
   .home_logo {
     width: 28%;
     margin-top: 54px;
-    margin-left: 5%;
+
   }
 
   .home_go {
@@ -98,7 +79,6 @@ h1, h2, h3, h4, h5, h6 {
   }
 
   .home_nav_left {
-    margin-left: 5%;
     width: 200px;
     height: 35px;
     line-height: 35px;
@@ -135,7 +115,6 @@ h1, h2, h3, h4, h5, h6 {
   }
 
   .home_list_nav_left {
-    margin-left: 5%;
     width: 200px;
     background-color: black;
     opacity: 0.90;
@@ -183,8 +162,6 @@ h1, h2, h3, h4, h5, h6 {
   .home_center {
     min-width: 1210px;
     margin-top: 20px;
-    padding-left: 5%;
-    padding-right: 5%;
   }
 
   .home_center > div {
@@ -196,22 +173,9 @@ h1, h2, h3, h4, h5, h6 {
     width: 33%;
   }
 
-  .home_center_end img {
-    min-width: 1210px;
-  }
-
   .home_yu {
     height: 500px;
     min-width: 1210px;
-    margin-left: 5%;
-    margin-right: 5%;
-  }
-
-  .home_yu_left > img {
-    width: 190px;
-    height: 190px;
-    background-color: #7b007b;
-    border: 1px solid silver;
   }
 
   .footer_top {
@@ -225,3 +189,5 @@ h1, h2, h3, h4, h5, h6 {
     background-color: #3B3837;
   }
 }
+
+
