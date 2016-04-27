@@ -58,7 +58,7 @@ app.use(function (err, req, res, next) {
 });
 
 //数据库的链接
-//mongoose.connect(config.db.mongodb);
+mongoose.connect(config.db.mongodb);
 
 
 module.exports = app;

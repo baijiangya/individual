@@ -1,9 +1,4 @@
-//exports.login = function (req, res) {
-//    res.render('index', {'title': '首页'});
-//};
 var user = require('../db/userdb');
-
-
 var home = {};
 //首页的加载
 home.index = function (req, res) {
@@ -14,17 +9,11 @@ home.sign = function (req, res) {
         name: req.body.name,
         pwd: req.body.pwd
     });
-    ////user.save(us, function (err, da) {
-    ////    if (err) {
-    ////        console.log(err)
-    ////    }
-    ////    console.log('存储的值');
-    ////    console.log(da)
-    ////});
     user.list(function (err, da) {
         if (err) {
             console.log(err)
         }
+        console.log(da);
         res.json(da);
     });
 };
