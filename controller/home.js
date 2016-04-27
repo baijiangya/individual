@@ -10,28 +10,23 @@ home.index = function (req, res) {
     res.render('index', {'title': '首页'});
 };
 home.sign = function (req, res) {
-    alert("sss");
     var us = ({
         name: req.body.name,
         pwd: req.body.pwd
     });
-    console.log(us);
-    res.json({name:req.body.name,pwd:req.body.pwd});
-    //user.save(us, function (err, da) {
-    //    if (err) {
-    //        console.log(err)
-    //    }
-    //    console.log('存储的值');
-    //    console.log(da)
-    //});
-    //user.list(function (err, da) {
-    //    if (err) {
-    //        console.log(err)
-    //    }
-    //    console.log('查询的值');
-    //    console.log(da)
-    //});
-    //res.render('index', {'title': '首页'});
+    ////user.save(us, function (err, da) {
+    ////    if (err) {
+    ////        console.log(err)
+    ////    }
+    ////    console.log('存储的值');
+    ////    console.log(da)
+    ////});
+    user.list(function (err, da) {
+        if (err) {
+            console.log(err)
+        }
+        res.json(da);
+    });
 };
 home.login = function (req, res) {
     res.render('login', {'title': '用户登录'});

@@ -15,11 +15,11 @@ $(function () {
 function onlogin(form) {
     var _name = form.name.value;
     var _pwd = form.pwd.value;
-    if (!name) {
+    if (!_name) {
         alert('用户名称不能为空');
         return;
     }
-    if (!pwd) {
+    if (!_pwd) {
         alert('密码不能为空');
         return;
     }
@@ -32,14 +32,10 @@ function onlogin(form) {
         type: 'POST',//提交方式
         dataType: 'json',//返回数据的类型
         success: function (data) {//后台处理数据成功后的回调函数
-            // alert(data);
-            //  在这里执行对页面的数据刷新
-            //$("div .a").html(data);
-            alert("111");
+
         },
         error: function (data) {//后台处理数据失败后的回调函数
-            //   alert(data)
-            alert("222");
+
         }
     });
 

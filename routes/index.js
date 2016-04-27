@@ -9,6 +9,7 @@ router.get('/login', home.login);
 router.get('/phone', home.phone);
 router.get('/text', home.t);
 router.all('/sign', home.sign);
+router.post('/sign', home.sign);
 
 
 //function login() {

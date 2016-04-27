@@ -23,14 +23,14 @@
             <!--二级菜单-->
             <div id="menu_con">
                 <div class="tag" style="display: block">
-                    <form>
+                    <form  method="POST" action="/sign">
                         <div>
-                            <input type="text" placeholder="手机号/邮箱地址">
+                            <input type="text" name="name" placeholder="手机号/邮箱地址">
                         </div>
                         <div>
-                            <input type="text" placeholder="密码">
+                            <input type="text" name="pwd" placeholder="密码">
                         </div>
-                            <button>登录</button>
+                            <button type="button" onclick="onlogin(this.form)">登录</button>
                     </form>
                 </div>
                 <div class="tag" style="display: none">
